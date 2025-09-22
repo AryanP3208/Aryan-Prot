@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniVoice - Unified Voice Communication Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1>UniVoice</h1>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#about">About</a>
+        <a href="../index.html">Portfolio</a>
+      </div>
+    </nav>
+    
+    <div class="hero-content">
+      <h2>Break Language Barriers with AI-Powered Voice Communication</h2>
+      <p>UniVoice combines advanced speech recognition, real-time translation, and seamless communication to connect people across languages and platforms.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" id="startDemo">Try Demo</button>
+        <button class="btn-secondary">Learn More</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎤</div>
+          <h3>Voice Recognition</h3>
+          <p>Advanced AI-powered speech-to-text with support for multiple languages and accents.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Real-time Translation</h3>
+          <p>Instant translation between 50+ languages with context-aware processing.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Multi-platform Integration</h3>
+          <p>Seamless integration across web, mobile, and desktop applications.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Assistant</h3>
+          <p>Intelligent voice assistant with natural language understanding and response.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" class="demo">
+    <div class="container">
+      <h2>Interactive Demo</h2>
+      <div class="demo-interface">
+        <div class="voice-visualizer">
+          <div class="wave-animation" id="waveAnimation"></div>
+        </div>
+        <div class="demo-controls">
+          <button class="demo-btn" id="recordBtn">🎤 Start Recording</button>
+          <button class="demo-btn" id="translateBtn" disabled>🌐 Translate</button>
+          <button class="demo-btn" id="playBtn" disabled>🔊 Play</button>
+        </div>
+        <div class="demo-output">
+          <div class="output-section">
+            <h4>Original Text:</h4>
+            <p id="originalText">Your spoken words will appear here...</p>
+          </div>
+          <div class="output-section">
+            <h4>Translated Text:</h4>
+            <p id="translatedText">Translation will appear here...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About UniVoice</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Revolutionizing Voice Communication</h3>
+          <p>UniVoice is an innovative project that leverages cutting-edge AI technologies to create a unified voice communication platform. Built with Python, TensorFlow, and modern web technologies, it represents the future of cross-linguistic communication.</p>
+          
+          <h4>Technical Stack:</h4>
+          <ul>
+            <li><strong>Backend:</strong> Python with TensorFlow for AI processing</li>
+            <li><strong>Speech Processing:</strong> Advanced speech recognition models</li>
+            <li><strong>Translation:</strong> Neural machine translation</li>
+            <li><strong>Frontend:</strong> Modern web technologies with WebRTC</li>
+            <li><strong>Real-time:</strong> WebSocket connections for live communication</li>
+          </ul>
+          
+          <h4>Key Applications:</h4>
+          <ul>
+            <li>International business communications</li>
+            <li>Educational language learning</li>
+            <li>Healthcare patient-doctor communication</li>
+            <li>Travel and tourism assistance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 UniVoice Project | Developed by Aryan Patel</p>
+      <p>Part of GenAiMart Innovation Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
