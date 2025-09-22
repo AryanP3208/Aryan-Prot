@@ -83,6 +83,76 @@
       font-weight: bold;
       border-radius: 6px;
     }
+    .project-showcase {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .project-card {
+      background: #2a2a2a;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 500px;
+      border: 2px solid #333;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: #00e0ff;
+    }
+    .project-card h3 {
+      color: #00e0ff;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #00e0ff;
+      padding-bottom: 10px;
+    }
+    .project-description {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #cccccc;
+    }
+    .project-tech {
+      margin-bottom: 20px;
+    }
+    .tech-tag {
+      display: inline-block;
+      background: linear-gradient(90deg, #00e0ff, #ff2b75);
+      color: #000;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 0.9em;
+      font-weight: bold;
+      margin: 5px 5px 5px 0;
+    }
+    .project-links {
+      display: flex;
+      gap: 15px;
+    }
+    .project-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #00e0ff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    .project-link:hover {
+      background-color: #00b8d4;
+    }
+    .project-link.secondary {
+      background-color: transparent;
+      border: 2px solid #00e0ff;
+      color: #00e0ff;
+    }
+    .project-link.secondary:hover {
+      background-color: #00e0ff;
+      color: #000;
+    }
   </style>
 </head>
 <body>
@@ -100,6 +170,7 @@
     <a href="#biography">Biography</a>
     <a href="#education">Education</a>
     <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#certificates">Certificates</a>
     <a href="#contact">Contact</a>
@@ -127,6 +198,31 @@
       <li><strong>Student Worker – Office of Admissions, AUM</strong> – 2025–Present</li>
       <li><strong>Peer Mentor – Programming Fundamentals</strong> – Spring 2025</li>
     </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-showcase">
+      <div class="project-card">
+        <h3>UniVoice</h3>
+        <p class="project-description">
+          A unified voice communication platform that brings together AI-powered voice recognition, 
+          real-time translation, and seamless multi-platform integration. UniVoice enables users to 
+          communicate across language barriers using advanced speech processing and natural language understanding.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">TensorFlow</span>
+          <span class="tech-tag">Speech Recognition</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">WebRTC</span>
+        </div>
+        <div class="project-links">
+          <a href="./univoice/index.html" class="project-link">View Project</a>
+          <a href="#" class="project-link secondary">GitHub</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="skills">
